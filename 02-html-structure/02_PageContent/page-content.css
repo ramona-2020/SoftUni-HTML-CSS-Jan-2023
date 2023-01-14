@@ -1,0 +1,20 @@
+body {
+  background-color: #ccc;
+}
+
+section {
+  border: 1px solid #000;
+  margin-left: 20px;
+}
+
+header h1 {
+  font-size: 28px;
+}
+
+header p {
+  font-style: italic;
+}
+
+p {
+  font-size: 24px;
+}
