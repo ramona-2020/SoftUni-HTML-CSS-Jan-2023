@@ -1,1 +1,37 @@
-/* TODO: style the html */
+body {
+  background-color: #02475e;
+}
+
+h2 {
+  text-align: center;
+  font-size: 36px;
+  color: #fefecc;
+  margin: 12px;
+}
+
+p {
+  font-family: Arial, sans-serif;
+  color: #eee;
+  line-height: 24px;
+  padding: 10px;
+  text-indent: 30px;
+}
+
+div {
+  margin-bottom: 30px;
+  border-top: 2px solid #fff;
+  position: relative;
+  top: 20px;
+}
+
+span {
+  display: block;
+  background-color: #fff;
+  margin: 0 auto;
+  padding: 3px 5px;
+  width: 120px;
+  text-align: center;
+  font-size: 14px;
+  position: relative;
+  top: -11px;
+}

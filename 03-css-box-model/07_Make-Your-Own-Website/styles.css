@@ -1,1 +1,23 @@
-/* TODO: style the html */
+/* TODO: 
+    • <div> on mouse hover:
+        ◦ Background color: #2A4C68
+
+*/
+div {
+  width: 280px;
+  background-color: #0a2c48;
+  color: #fff;
+  display: inline-block;
+  padding: 16px 16px 16px 32px;
+  margin-top: 20px;
+  border-radius: 4px;
+}
+
+div:hover {
+  background-color: #2a4c68;
+}
+
+p {
+  color: #c9d6ff;
+  font-size: 18px;
+}

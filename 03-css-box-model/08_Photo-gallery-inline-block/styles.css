@@ -1,0 +1,47 @@
+/*"
+    • Create unordered list with class gallery (ul.gallery) 
+    • Add list items with images inside
+    • <body>
+        ◦ Padding: 5rem
+        ◦ Background color: #eee
+    • .gallery
+        ◦ Width: 100%
+        ◦ Margin: 0 auto
+        ◦ Align the text to the center
+    • li
+        ◦ Width: 18rem
+        ◦ Display the list as inline-block
+        ◦ Background color: #fff
+        ◦ Solid border with size 0.4rem and color #000
+        ◦ Padding: 1rem
+        ◦ Vertical align: middle
+        ◦ Margin: 0.5rem
+
+*/
+body {
+  background-color: #eee;
+  padding: 5rem;
+}
+
+.gallery {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  list-style: none;
+}
+
+li {
+  display: inline-block;
+  width: 18rem;
+  margin: 0.5rem;
+  padding: 1rem;
+  vertical-align: middle;
+  background-color: #fff;
+  border: 1px solid #000;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}

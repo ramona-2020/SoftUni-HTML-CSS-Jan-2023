@@ -1,0 +1,55 @@
+/*
+    • Divide your content into header and main tags
+    • Create a navigation bar 
+        ◦ Add four list items in nav tag with a tags inside 
+        ◦ Add display: inline-block; style for each item in the nav
+*/
+body {
+  box-sizing: border-box;
+}
+
+body *,
+body::after,
+body::before {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Helvetica, sans-serif;
+}
+
+header {
+  border-bottom: 1px solid #000;
+  padding-bottom: 30px;
+}
+
+.title {
+  font-size: 34px;
+  font-weight: 600;
+}
+
+h1 {
+  font-weight: 300;
+}
+
+.title,
+nav {
+  display: inline-block;
+  margin-right: 100px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+li {
+  display: inline-block;
+  margin-right: 30px;
+}
+
+a {
+  color: green;
+  text-decoration: none;
+}
