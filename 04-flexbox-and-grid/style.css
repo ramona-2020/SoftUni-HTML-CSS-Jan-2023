@@ -1,0 +1,26 @@
+/* Grid */
+.grid-item:nth-child(1) {
+    background-color: aquamarine;
+}
+.grid-item:nth-child(2) {
+    background-color: #444;
+}
+.grid-item:nth-child(3) {
+    background-color: #ddd;
+}
+.grid-item:nth-child(4) {
+    background-color: red;
+}
+.grid-item:nth-child(5) {
+    background-color: coral;
+}
+.grid-item:nth-child(6) {
+    background-color: darkblue;
+}
+
+.grid-layout {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 15px;
+}
