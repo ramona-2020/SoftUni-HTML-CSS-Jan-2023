@@ -1,0 +1,93 @@
+/*
+    • Create an "index.html" file with title - "Buttons CSS"
+    • Use h2 tag for headings
+    • Create 9 buttons on 3 rows with class button
+        ◦ For the first button in each row use a tag [x]
+        ◦ For the next two buttons in the row use button tags [x]
+        ◦ The buttons in the second and the third row should have class - fill [x]
+        ◦ Every last button in the row should have class - hover [x]
+    • You must use the following three colors: 
+        ◦ green(rgb(0, 102, 0))
+        ◦ white(rgb(251, 251, 251))
+        ◦ gray(rgb(51, 51, 51))
+    • Use FontAwesome for this task. Import it in your CSS, with the @import rule.
+Hints
+    • Change the cursor property to pointer
+    • Change the outline property to none
+    • FontAwesome: https://use.fontawesome.com/releases/v5.6.3/css/all.css
+*/
+@import url("https://use.fontawesome.com/releases/v5.6.3/css/all.css");
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: var(--white);
+}
+
+:root {
+    --green:rgb(0, 102, 0);
+    --white:rgb(251, 251, 251);
+    --gray: rgb(51, 51, 51);
+}
+
+h2 {
+    font-weight: normal;
+}
+
+a, .button {
+    display: inline-block;
+
+    padding: 6px 16px;
+    border: 1px solid var(--gray);
+    border-radius: 24px;
+    margin-right: 12px;
+    text-decoration: none;
+
+    background-color: transparent;
+
+    cursor: pointer;
+    outline: none;
+
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--gray);
+    text-align: center;
+}
+
+.fill {
+    background-color: var(--gray);
+    color: var(--white);
+}
+
+.hover:hover {
+    background-color: var(--white);
+    border-color: var(--green);
+    color: var(--green);
+}
+
+.fill.hover:last-child:hover  {
+    background-color: var(--green);
+}
+
+.hover {
+    color: rgb(51, 51, 51);
+}
+
+.button.fill.hover {
+    color: rgb(251, 251, 251);
+}
+
+@media screen and (max-width: 340px){
+    a, button {
+        display: block;
+        margin: 16px auto;
+        max-width: 100%;
+    }
+
+    button {
+        width: 100%
+    };
+}
