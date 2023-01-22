@@ -1,0 +1,90 @@
+/* Constraints:
+    • Use font 'Montserrat' for the heading
+    • Use font 'Lato' for the text
+*/
+
+@import url('reset.css');
+
+/* 
+    For Headings we used Regular, Medium, SemiBold
+*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+
+/*
+    For text we use: Light, Regular
+*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+
+/*
+    For FontAwesome we use: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css
+*/
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css');
+
+:root {
+    --clr-primary: #FAA22F;
+    --clr-heading: #333333;
+    --clr-text: #4D4D33;
+    --clr-white: #fff;
+}
+
+/*
+    General fonts.
+*/
+html {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    padding: 1rem;
+}
+
+#calendar {
+    overflow: hidden;
+    
+    box-shadow: 5px 5px 20px 0px rgba(200,200,200,1);
+    border-radius: 4px;
+}
+
+.calendar__topbar {
+    background-color: var(--clr-primary);
+
+    color: var(--clr-white);
+    padding: 1rem;
+}
+
+
+.calendar__topbar .icon {
+    margin-right: 0.5rem;
+}
+
+.calendar__topbar span {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.event {
+    padding: 1.5rem 1rem 3rem;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.event__time {
+    font-size: 12px;
+    color: gray;
+    
+    display: block;
+    margin-bottom: 0.75rem;
+}
+
+.events a {
+    text-decoration: none;
+}
+
+.event__title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    color: var(--clr-heading);
+    margin-bottom: 1.25rem;
+}
+
+.event__desc {
+    line-height: 1.4;
+
+}

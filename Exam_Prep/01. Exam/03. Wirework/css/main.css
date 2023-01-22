@@ -1,0 +1,130 @@
+/*
+    • Use Font Awesome with the icons (wrench, unlock-alt, legal, key)
+    • Use font 'Helvetica' 
+    • The site should open correctly in the latest version of Chrome
+*/
+@import url("reset.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css");
+
+:root {
+    --clr-primary: #e24e2a;
+    --clr-grey: #ececec;
+    --clr-grey-dark: #3f3f3f;
+    --clr-grey-text: #575652;
+    --clr-grey-bg: #383838;
+    --clr-green: #1b9772;
+    --clr-green-text: #3aa483;
+    --clr-green-link: #8ec2aa;
+    --clr-white: #fff;
+
+    --header-height: 66px;
+}
+
+body {
+    font-family: Helvetica, sans-serif;
+    color: var(--clr-grey-dark);
+}
+
+/* Navigation */
+.header {
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    z-index: 100;
+
+    display: flex;
+    justify-content: space-between;
+
+    padding: 0.5rem 1rem;
+    background-color: var(--clr-white);
+}
+
+.header .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.header .logo .main {
+    font-size: 46px;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.header .logo .divider {
+    display: inline-block;
+    width: 1px;
+    height: 50px;
+    background-color: var(--clr-grey-dark);
+}
+
+.header .logo .sub {
+    font-size: 21px;
+    line-height: 1;
+}
+
+/* Nav */
+.header .nav {
+    display: flex;
+    gap: 2px;
+}
+
+.header .nav .nav-item {
+    padding: 1rem 2rem;
+    background-color: var(--clr-grey);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header .nav .nav-item.active {
+    background-color: var(--clr-primary);
+    color: var(--clr-white);
+}
+
+.header .nav .nav-item .nav-link {
+    text-decoration: none;
+    letter-spacing: 1.1px;
+    color: inherit; /* from body */
+    line-height: 0.9;
+}
+
+/* Hero */
+#hero {
+    height: calc(100vh - var(--header-height));
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+#hero .img-container {
+    overflow: hidden;
+}
+
+/* Image inside container: how the content of a replaced element (<img> or <video>) should be resized to fit its container /cover, contain/.
+ - width
+ - height
+*/
+#hero .img-container .hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#hero .content {
+    padding: 4rem;
+    background-color: var(--clr-primary);
+    color: var(--clr-white);
+}
+
+#hero .content .text {
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 19px;
+    line-height: 1.5;
+}
+
+/* sections */
