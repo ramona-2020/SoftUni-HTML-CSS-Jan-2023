@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+/*
+    • Use font 'Montserrat' for the heading
+    • Use font 'Poppins' for the text
+*/
+
+html {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h2,
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+h2 {
+    margin-bottom: 1.5rem;
+}
+
+h3 {
+    font-weight: 600;
+}
+
+.auto {
+    max-width: 1300px;
+    margin: 150px auto;
+
+    display: flex;
+}
+
+.auto__content {
+    padding-right: 70px;
+}
+
+.auto__content__title {
+    line-height: 2rem;
+    margin-top: 0;
+}
+
+.auto__content__text {
+    margin-bottom: 1rem;
+}
+
+.auto__content__features {
+    padding-left: 0;
+}
+
+.auto__content__feature__item {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.auto__content__feature__item:not(:last-of-type) {
+    margin-bottom: 10px;
+}
+
+.auto__content__feature__icon {
+    max-width: 60px;
+    margin-right: 20px;
+}
+
+.auto__content__feature__icon img {
+    width: 100%;
+}
+
+.auto__content__feature__title {
+    margin: 0px;
+}
+
+.auto__content__feature__subtitle {
+    margin: 0;
+}
