@@ -4,13 +4,15 @@
     • The site should open correctly in the latest version of Chrome
 */
 @import url("reset.css");
-@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css");
+/* @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"); */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css");
 
 :root {
     --clr-primary: #e24e2a;
     --clr-grey: #ececec;
     --clr-grey-dark: #3f3f3f;
     --clr-grey-text: #575652;
+    --clr-gray-light: #A2A2A2;
     --clr-grey-bg: #383838;
     --clr-green: #1b9772;
     --clr-green-text: #3aa483;
@@ -128,3 +130,72 @@ body {
 }
 
 /* sections */
+/* Features */
+.features__container {
+    background-color: #383838;
+    color: #596266;
+    padding: 120px 40px;
+}
+
+.feature__icon__container {
+    border-bottom: 1px solid #6C6362;
+}
+
+.feature__icon {
+    background-color: var(--clr-primary);
+    width: 130px;
+    height: 130px;
+    display: block;
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 60px;
+    color: var(--clr-white);
+}
+
+.feature__desc__container {
+    margin-top: 24px;
+    line-height: 1.8;
+    font-size: 20px;
+}
+
+.features__list {
+    display: flex;
+    gap: 30px;
+    text-align: center;
+}
+
+.feature__title {
+    font-size: 21px;
+    margin: 24px 0;
+    color: var(--clr-white);
+}
+
+/* Request demo */
+.request__demo__container {
+    padding: 120px 40px;
+    text-align: center;
+}
+
+.request__demo__title {
+    font-size: 48px;
+    font-weight: 300;
+    color: var(--clr-grey-text);
+}
+
+.request__demo__subtitle {
+    font-size: 24px;
+    color: var(--clr-gray-light);
+    margin-bottom: 48px;
+}
+
+.request__demo__btn {
+    background-color: var(--clr-green);
+    padding: 16px 64px;
+    color: #fff;
+    border: none;
+    font-weight: bold;
+    letter-spacing: 5px;
+}
