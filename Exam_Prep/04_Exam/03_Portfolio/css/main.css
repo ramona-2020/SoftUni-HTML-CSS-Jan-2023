@@ -1,0 +1,154 @@
+@import url("reset.css");
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;600;700&display=swap');
+@import 'https://use.fontawesome.com/releases/v5.15.2/css/all.css';
+
+:root {
+    --clr-gray-bg: #efefef;
+    --clr-dark: #111111;
+    --clr-white: #fff;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: "Raleway", sans-serif;
+    color: var(--clr-dark);
+
+    padding: 32px;
+}
+
+
+/*  ---------
+    Utilities
+    ---------
+*/
+button {
+    border: none;
+}
+
+.mr {
+    margin-right: 1rem;
+}
+
+.section {
+    display: flex;
+    justify-content: space-evenly;
+
+    padding: 80px 40px;
+    margin-bottom: 32px;
+
+    background-color: var(--clr-gray-bg);
+}
+
+.section__title {
+    font-size: 42px;
+
+    margin-bottom: 1.5rem;
+}
+
+.section__title__flex {
+    display: flex;
+    align-items: center;
+}
+
+.section__desc {
+    font-style: italic;
+
+    margin-bottom: 1rem;
+}
+
+.section__title__light {
+    font-weight: 200;
+}
+
+.section__title__bold {
+    font-weight: bold;
+}
+
+.section__divider__vertical,
+.section__divider__horizontal {
+    background-color: var(--clr-dark);
+}
+
+.section__divider__vertical {
+    width: 1px;
+    height: 4rem;
+}
+
+.section__divider__horizontal {
+    width: 4rem;
+    height: 1px;
+
+    margin-right: 1.5rem;
+}
+
+/*  ---------
+    MENU Button
+    ---------
+*/
+#menu {
+    position: absolute;
+    right: 30px;
+    top: 30px;
+}
+
+.navigation i {
+    margin-left: 1rem;
+}
+
+/*  ---------
+    Sections
+    ---------
+*/
+
+/* First Section */
+#first__section {
+    position: relative;
+}
+
+.first__section__container {
+    width: 35%;
+
+    margin-top: 5rem;
+}
+
+.first__section__image__container {
+    width: 45%;
+}
+
+.first__section__image__container img {
+    margin: auto;
+}
+
+/* Second Section */
+.social__link__item {
+    font-size: 18px;
+    background-color: #909090;
+
+    padding: 10px 20px;
+    margin-right: 20px;
+
+    display: inline-block;
+}
+
+.social__link {
+    color: var(--clr-white);
+}
+
+#second__section .section__desc {
+    margin-bottom: 2rem;
+}
+
+#second__section .section__desc:last-of-type {
+    margin-bottom: 3rem;
+}
