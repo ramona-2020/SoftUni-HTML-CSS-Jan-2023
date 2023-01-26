@@ -1,56 +1,82 @@
 /* TODO: Add responsive styles here... */
 @media screen and (max-width: 600px) {
+  
+  /* Navigation */
   .navbar {
+    display: flex;
     justify-content: center;
-    padding-bottom: 30px;
+    align-items: center;
   }
 
-  .navbar-brand {
-    margin-right: 0 !important;
+  .navbar .navbar-brand {
+    margin-right: 0;
   }
 
-  header .container-fluid,
-  .services .container,
-  footer .container {
-    text-align: center;
-    max-width: 70%;
-  }
-
-  .container {
+  /* Hero section */
+  .hero {
     text-align: center;
   }
 
-  .hero img,
-  .contact .hero-btns {
+  .hero > img {
     display: none;
   }
 
   .hero h1 {
-    font-size: 2.4rem;
-    margin-top: 20px;
-  }
-
-  .hero p {
-    margin-bottom: 40px;
+    margin-top: 2rem;
   }
 
   .hero-btns {
-    margin-bottom: 60px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
-  .hero-btns a {
-    display: block;
-    padding: 10px !important;
+  /* Services section */
+  .services .service-txt {
+    text-align: center;
   }
 
-  .service-box {
+  .services .service-box {
     text-align: left;
     padding: 40px 30px;
+    margin-bottom: 50px;
   }
+
+  /* About section */
+  .about {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
   .about img {
-    margin-bottom: 80px;
+    margin-bottom: 50px;
   }
-  footer .container .contact-nav li {
-    display: block;
+
+  .about p {
+    width: 75%;
+    margin: auto;
   }
+
+  /* Contacts section */
+  .contact {
+    text-align: center;
+  }
+
+  .contact .hero-btns {
+    display: none;
+  }
+
+  /* Footer */
+  footer .contact-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  footer h6 {
+    padding-bottom: unset;
+  }
+  
 }
