@@ -1,0 +1,205 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css");
+
+:root {
+    --clr-black: #000;
+    --clr-white: #fff;
+    --clr-gray: #51525c;
+    --clr-dark-gray: #303030;
+    --clr-red: #f30000;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    font-size: 16px;
+    line-height: 1;
+
+    background-color: var(--clr-black);
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+/*
+    -------------
+        COMMON
+    -------------
+*/
+button {
+    background-color: var(--clr-red);
+    border: none;
+    border-radius: 4px;
+    padding: 8px 32px;
+
+    font-size: 1.2rem;
+    color: var(--clr-white);
+    line-height: 1.5;
+    cursor: pointer;
+
+    z-index: 1;
+}
+
+section {
+    border-bottom: 10px solid #222222;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+input,
+textarea {
+    font-size: 1.45rem;
+    border: none;
+    outline: none;
+}
+
+/* Navigation */
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Hero section */
+#hero {
+    height: 100vh;
+    position: relative;
+
+    text-align: center;
+    color: var(--clr-white);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    z-index: -1;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.content__container {
+    width: 50%;
+    margin: auto;
+
+    font-weight: 400;
+
+    z-index: 1;
+}
+
+.hero__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.logo,
+.btn__sign__in {
+    margin-top: 1rem;
+}
+
+.logo {
+    margin-left: 5rem;
+    height: 50px;
+}
+
+.btn__sign__in {
+    margin-right: 5rem;
+}
+
+.website__title {
+    font-size: 5rem;
+    margin: 0;
+}
+
+.website__subtitle {
+    font-size: 2rem;
+}
+
+.website__desc,
+.new_members {
+    font-size: 1.45rem;
+}
+
+.content__row__sign__up {
+    display: flex;
+}
+
+.email {
+    padding: 20px 15px;
+    width: 60%;
+}
+
+.try__button {
+    font-size: 2rem;
+    padding: 20px;
+    vertical-align: middle;
+}
+
+.try__button i {
+    font-size: 1.5rem;
+}
+
+/* Footer */
+footer {
+    padding: 80px;
+    color: var(--clr-gray);
+}
+
+.footer__links__container {
+    width: 50%;
+    margin: auto;
+}
+
+.grid__container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 15px;
+}
+
+.footer__text:first-of-type {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.footer__text:last-child {
+    margin-top: 2.5rem;
+}
+
+.footer__col a {
+    color: var(--clr-gray);
+    line-height: 2;
+    text-decoration: none;
+}
