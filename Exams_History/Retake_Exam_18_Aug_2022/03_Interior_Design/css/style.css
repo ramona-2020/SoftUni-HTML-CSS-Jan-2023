@@ -1,0 +1,181 @@
+/*
+    fonts - "Roboto" and for the headings "Abril Fatface"
+*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css');
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Abril Fatface', cursive;
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: rgb(64, 61, 61);
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+header,
+main {
+    width: 100%;
+    max-width: 1280px;
+    margin: auto;
+}
+
+/* Hero */
+#hero {
+    height: 100vh;
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    z-index: -1;
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    margin: auto;
+}
+
+.hero__titles {
+    line-height: 2;
+    position: absolute;
+    top: 30px;
+    left: 20px;
+
+    padding: 30px;
+    border: 1px solid #000;
+}
+
+.hero__text__content {
+    position: absolute;
+    top: 30px;
+    right: 20px;
+
+
+    padding: 30px;
+    border: 1px solid #000;
+}
+
+.hero__text__content {
+    position: absolute;
+    right: 30px;
+    top: 30%;
+
+    border: none;
+    border-radius: 5px;
+    width: 350px;
+
+    font-weight: bold;
+    color: #fff;
+    text-align: right;
+    line-height: 1.5;
+    text-shadow: 1px 1px #000;
+
+    padding-top: 3.5rem;
+    padding-bottom: .5rem;
+    padding-right: 1.5rem;
+
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#9e948a+0,cac7c6+100 */
+    background: #9e948a; /* Old browsers */
+    background: -moz-linear-gradient(left,  #9e948a 0%, #cac7c6 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left,  #9e948a 0%,#cac7c6 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right,  #9e948a 0%,#cac7c6 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9e948a', endColorstr='#cac7c6',GradientType=1 ); /* IE6-9 */
+}
+
+
+/*MAIN */
+main {
+    display: grid;
+    grid-template-columns: calc(1280px - 380px) 380px;
+
+    background-color: #f3eff3;
+}
+
+main h2 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+/* SERVICES */
+#our__services {
+    padding: 80px;
+}
+
+.section__title {
+    margin-bottom: 2rem;
+}
+
+.services__items {
+    line-height: 1.5;
+}
+
+.services__items li {
+    margin-bottom: 1.5rem;
+}
+
+.services__items .item {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.services__items .item i {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+/* CONTACTS */
+#contacts h2 {
+    border-bottom: 1px solid #000;
+    padding-left: 80px;
+    padding-bottom: 5px;
+}
+
+aside {
+    padding: 30px;
+    background-color: #bbb1ad;
+}
+
+aside h3 {
+    font-size: 4rem;
+    line-height: 1;
+    letter-spacing: 5px;
+    color: #fff;
+    font-weight: 200;
+}
+
+.features__items li {
+    margin-bottom: 5rem;
+}
+
+.features__items p {
+    text-transform: uppercase;
+    margin: 0;
+}
