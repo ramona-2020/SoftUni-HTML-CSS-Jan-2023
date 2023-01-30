@@ -1,0 +1,54 @@
+/* TODO: Add responsive styles here... */
+@media screen and (max-width: 600px){
+    /* Header */
+    header nav {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    header nav ul {
+        margin-top: 2rem;
+        text-align: center;
+    }
+
+    header nav ul li {
+        display: block;
+    }
+
+    .header-title {
+        padding: 1rem 0;
+    }
+
+    .header-title h1 {
+        font-size: 40px;
+    }
+
+    /* Out Team */
+    .team-description-wrapper {
+        width: 100%;
+    }
+
+    .team-description ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 60px;
+    }
+
+    /* Choose us */
+    .choose-us ul {
+        flex-direction: column;
+    }
+
+    /* Blog news */
+    .blog-news ul {
+        flex-direction: column;
+        gap: 50px;
+    }
+    .blog-news ul .item .avatar {
+        width: 60%;
+    }
+    .blog-news .content {
+        width: 40%;
+    }
+}
