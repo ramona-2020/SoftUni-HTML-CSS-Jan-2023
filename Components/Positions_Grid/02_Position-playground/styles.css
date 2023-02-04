@@ -1,0 +1,39 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css");
+
+body {
+    display: grid;
+    grid-template-rows: 450px 450px;
+}
+
+section.card {
+    display: block;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.viewport {
+    position: relative;
+}
+
+.viewport:first-of-type {
+    background: linear-gradient(to right, rgb(31, 90, 178), rgb(36, 141, 118));
+}
+
+.viewport:last-of-type {
+    background: linear-gradient(to right, rgb(178, 31, 31), rgb(253, 187, 45));
+}
+
+i {
+    position: absolute;
+    right: 10px;
+    bottom: 15px;
+
+    color: #fff;
+}
+
+img {
+    max-width: 250px;
+}
