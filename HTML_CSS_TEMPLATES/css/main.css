@@ -1,0 +1,96 @@
+/*
+  COLORS
+  ------------
+*/
+:root {
+    --color-black: #000;
+    --color-primary: #7a6cfa;
+}
+
+html {
+    box-sizing: border-box;
+}
+    
+html *::after,
+html *::before {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: Helvetica, sans-serif;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+  TYPOGRAPHY
+  ----------------
+*/
+
+/*
+  COMMON ELEMENTS
+  ----------------
+*/
+
+.btn {
+    border: none;
+    border-radius: 4px;
+    background-color: #162044;
+    color: #fff;
+    padding: 8px 20px;
+    cursor: pointer;
+}
+
+
+/* 
+  sHEADER
+  ----------------
+*/
+.header__sticky {
+    position: sticky;
+    top: 0px;
+
+
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    border-bottom: 1px solid #7e8bb6;
+    background-color: #070e27;
+
+    padding: 16px 64px;
+}
+
+nav.navigation {
+    margin-left: auto;
+    margin-right: 24px;
+}
+
+ul.nav-list {
+    display: flex;
+    gap: 12px;
+}
+
+/* FLEX ITEMS */
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    /* Optional 
+        max-width: 900px;
+        margin: 0 auto 48px auto;
+    */
+}
+
+.flex__row {
+    display: flex;
+    align-items: center;
+
+    /*  Optional
+        gap: 32px;
+    */
+    max-width: 900px;
+    margin: 0 auto;
+}
