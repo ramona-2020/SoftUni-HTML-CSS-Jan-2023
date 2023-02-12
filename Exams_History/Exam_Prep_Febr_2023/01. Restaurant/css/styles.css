@@ -58,9 +58,9 @@ body {
     outline-color: var(--color-btn-primary);
     border: none;
     border-bottom: 1px solid #363636;
+    line-height: 2;
 
     padding: 10px 0;
-    margin-bottom: 15px;
 }
 
 input::placeholder {
@@ -107,6 +107,7 @@ main {
 .text__content .form {
     display: flex;
     flex-flow: column;
+    gap: 15px;
 }
 
 .text__content .btn-primary {

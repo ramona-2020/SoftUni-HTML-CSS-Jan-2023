@@ -5,7 +5,10 @@
 :root {
     --color-black: #000;
     --color-white: #fff;
+    
     --color-primary: #7a6cfa;
+    --color-bg-primary: #ddd;
+    --color-btn-primary: #ccc;
 }
 
 /*
@@ -29,6 +32,14 @@ body {
     font-size: 20px;
     margin: 0;
     padding: 0;
+
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    
+    background-color: var(--color-bg-primary);
 }
 
 /*
@@ -50,15 +61,36 @@ body {
     cursor: pointer;
 }
 
+input {
+    background-color: transparent;
+    outline-color: var(--color-primary);
+    border: none;
+    border-bottom: 1px solid #363636;
+    padding: 10px 0;
+    line-height: 2;
+}
+
+.box__shadow {
+    box-shadow: 4px 3px 3px 4px grey;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) );
+}
+
 
 /* 
   HEADER
   ----------------
 */
 .header__sticky {
+    z-index: 1;
     position: sticky;
     top: 0px;
-
 
     display: flex;
     align-items: center;
@@ -101,4 +133,12 @@ ul.nav-list {
     */
     max-width: 900px;
     margin: 0 auto;
+}
+
+/*
+  HELPER CLASSES
+*/
+.center {
+    text-align: center;
+    transform: translate(0%, 150%);
 }
