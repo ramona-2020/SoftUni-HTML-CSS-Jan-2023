@@ -190,12 +190,11 @@ ul.nav-list {
 
 .row {
     display: grid;
-    /* grid-template-columns: repeat(2, 1fr); */
-    grid-auto-columns: 50%;
-    grid-template-rows: 450px;
 
     /* IMPORTANT */
-    grid-template-areas: "a a";
+    grid-auto-columns: 1fr;
+    grid-auto-flow: column;
+    grid-template-rows: 450px;
 }
 
 .row__text {
