@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Gelasio:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css');
+
 /*
   COLORS
   ------------
@@ -10,13 +13,6 @@
     --color-bg-primary: #ddd;
     --color-btn-primary: #ccc;
 }
-
-/*
-  FONTS
-  ------------
-*/
-@import url('https://fonts.googleapis.com/css2?family=Gelasio:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
-@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css');
 
 html {
     box-sizing: border-box;
@@ -48,6 +44,11 @@ body {
 */
 a {
     text-decoration: none;
+}
+
+.fa-solid {
+    vertical-align: middle;
+    margin-left: 5px;
 }
 
 button {

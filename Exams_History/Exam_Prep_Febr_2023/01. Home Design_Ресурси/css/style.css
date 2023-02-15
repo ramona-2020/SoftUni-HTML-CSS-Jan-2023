@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css');
+
+/*
+  COLORS
+  ------------
+*/
+:root {
+    --color-black: #000;
+    --color-white: #fff;
+    
+    --color-bg-primary: #f5f5f5;
+    --color-red: #d7001d;
+}
+
+html {
+    box-sizing: border-box;
+}
+    
+html *::after,
+html *::before {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Courgette', cursive;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+
+    background-color: var(--color-bg-primary);
+}
+
+/*
+  TYPOGRAPHY
+  ----------------
+*/
+a {
+    text-decoration: none;
+    color: var(--color-black);
+}
+
+.fa-solid {
+    color: var(--color-red);
+    margin-left: 5px;
+    vertical-align: middle;
+}
+
+button {
+    cursor: pointer;
+}
+
+/*
+  ARTICLE
+  ----------------
+*/
+#maine_home {
+    max-width: 1280px;
+    margin: auto;
+}
+
+#maine_home header {
+    width: 30%;
+    margin: 0 auto;
+}
+
+
+.main__title {
+    margin-bottom: 5px;
+    letter-spacing: 3px;
+
+    font-size: 3rem;
+    font-style: italic;
+    text-align: center;
+}
+
+.main__subtitle {
+    color: var(--color-red);
+    font-style: italic;
+    font-weight: lighter;
+    margin-top: 0;
+    text-align: right;
+    font-weight: bold;
+}
+
+.flex {
+    display: flex;
+    gap: 32px;
+    justify-content: space-between;
+    text-align: center;
+}
+
+/* Home section */
+.home__section {
+    background-color: var(--color-white);
+    border-radius: 15px;
+    overflow: hidden;
+    text-align: center;
+    font-style: italic;
+    width: 35%;
+    height: 50%;
+}
+
+.home__section .image {
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+}
+
+.home__section .home__section__text {
+    padding: 0px 16px;
+}
+
+.home__section .section__title {
+    border-bottom: 1px solid var(--color-red);
+    margin: 0;
+    padding-bottom: 10px;
+    font-style: italic;
+    font-size: 1.8rem;
+    line-height: 1.5;
+}
+
+.home__section .section__desc {
+    height: 100px;
+}
+
+.home__section .section__readmore {
+    margin-bottom: 20px;
+}
