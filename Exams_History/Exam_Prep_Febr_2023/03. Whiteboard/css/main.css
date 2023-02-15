@@ -1,7 +1,5 @@
-/*
-  COLORS
-  ------------
-*/
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+
 :root {
     --color-black: #000;
     --color-white: #fff;
@@ -11,12 +9,6 @@
     --color-bg-primary: #ddd;
     --color-btn-primary: #00d08e;
 }
-
-/*
-  FONTS
-  ------------
-*/
-@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
 
 html {
     box-sizing: border-box;

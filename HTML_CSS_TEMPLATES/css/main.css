@@ -69,6 +69,12 @@ button {
     cursor: pointer;
 }
 
+/* Responsive images */
+.image {
+    width: 100%;
+	height: auto;
+}
+
 input {
     background-color: transparent;
     outline-color: var(--color-primary);
@@ -122,17 +128,15 @@ ul.nav-list {
 
 /* FLEX ITEMS */
 .flex {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    /* Optional 
-        max-width: 900px;
-        margin: 0 auto 48px auto;
-    */
+	display: flex;
+	justify-content: center;
+	width: 960px;
+	max-width: 100%;
+	margin: auto;
 }
 
-.flex__row {
+
+.flex .row {
     display: flex;
     align-items: center;
 
@@ -141,6 +145,19 @@ ul.nav-list {
     */
     max-width: 900px;
     margin: 0 auto;
+}
+
+.flex .col {
+	display: flex;
+	flex-direction: column;
+	flex: 1 1 300px;
+	/* 
+	In the order, equal to
+	flex-grow: 1;
+	flex-shrink: 1;
+	flex-basis: 300px;
+	*/
+	margin: 1em;
 }
 
 /*
