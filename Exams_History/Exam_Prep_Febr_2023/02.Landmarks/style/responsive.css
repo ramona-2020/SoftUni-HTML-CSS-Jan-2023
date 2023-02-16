@@ -1,0 +1,98 @@
+/* TODO */
+@media screen and (max-width: 600px) {
+    
+    /* 
+        HEADER
+    */
+    #top-bar ul:nth-child(1) {
+        padding-left: 15px;
+    }
+
+    #main-menu {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #main-menu img {
+        padding-top: 10px;
+        padding-bottom: 15px;
+    }
+
+    #main-menu ul {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    #main-menu ul li {
+        border: 1px solid #e52236;
+    }
+
+    /*
+      ASIDE
+    */
+    main aside, main section {
+        display: flex;
+    }
+    #left-aside {
+        display: flex;
+        justify-content: space-evenly;
+        margin: 10px auto 35px auto;
+        align-items: start;
+    }
+
+    #left-aside article {
+        border: none;
+    }
+
+    /*
+      NEWS
+    */
+    #news {
+        width: 100%;
+        margin: auto;
+        margin-bottom: 60px;
+    }
+    main section {
+        flex-wrap: wrap;
+    }
+
+    /*
+      NEWS ARTICLE
+    */
+    #news article {
+        width: 100%;
+        display: block;
+    }
+
+    /*
+      RIGHT ASIDE
+    */
+    #right-aside {
+        width: 100%;
+        margin: 0;
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    /*
+      FOOTER
+    */
+    footer {
+        padding: 20px 0;
+    }
+
+    footer ul {
+        width: 100%;
+        margin: 0;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
